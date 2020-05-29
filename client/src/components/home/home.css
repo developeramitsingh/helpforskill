@@ -1,0 +1,120 @@
+.Home{
+	background-image:url('../../assets/images/blueback.png'); 
+	background-repeat: no-repeat;
+	background-color: #F4F7FE;
+    background-position: right;
+    background-size: auto 100%;
+    width: 100%;
+    display: block;    
+    height: 100vh;
+    padding: 120px 0px 80px 0px;
+
+}
+
+.OrangeHeading{
+	font-weight: bold;
+	font-size: 65px;
+	color: #F2C508;
+}
+
+.BlueHeading{
+	font-weight: bold;
+	font-size: 50px;
+	color:#0B1052;
+}
+.mainHead{
+	font-size: 35px;
+}
+
+.subHead{
+	font-size: 28px;	
+}
+
+.smallHead{
+	font-size: 24px;		
+}
+
+.center{
+	text-align: center;
+}
+
+.BannerImage{
+	width: 100%;
+	height: 90%;
+}
+
+.searchDivHome{
+
+	margin-top: 20px;
+	text-align: center;
+}
+
+.searchDivHome input{
+				
+		background: #FFFFFF 0% 0% no-repeat padding-box !important;
+		box-shadow: 0px 3px 6px #00000029 !important;
+		border: 1px solid #707070 !important;
+		border-radius: 46px !important;
+		text-align: center;
+	}
+
+.searchDivHome input:focus{
+		
+		box-shadow: none !important;
+}
+
+.SearchBtn{
+	padding: 12px 50px;
+	margin:auto;
+	margin-top:20px;
+	left: 0;
+	color:#0B1052;
+	right: 0;
+	border-radius: 50px;
+	user-select: none;
+	font-weight: bold;	
+	background: #F2C508 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #00000029;
+	font-style: 18px;
+	outline: none !important;
+	color:#fff;
+	cursor: pointer;
+}
+
+.SearchBtn:hover{
+	background: #0B1052;
+}
+
+@media screen and (max-width: 800px){
+	#nav-mobile{
+		color:#fff;
+	}
+	.Home{
+		color:#0B1052;
+		background:#F2C508;
+		text-align: center;
+	}
+	.searchDivHome{
+		text-align: center;
+		color:#0B1052;
+	}
+	.OrangeHeading{
+		color:#0B1052;
+	}
+	.searchDivHome input{
+		color: #0B1052;
+	}
+	.SearchBtn{
+		color:#fff;
+		width: 100%;
+		background:#0B1052 !important;
+		margin-top: 10px;
+		border: none;
+		box-shadow: none;
+	}
+
+	.SearchBtn:hover{
+		background: #263C68 0% 0% no-repeat padding-box !important;
+	}
+
+}

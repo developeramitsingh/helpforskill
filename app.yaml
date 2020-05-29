@@ -1,0 +1,9 @@
+runtime: nodejs
+env: flex
+env_variables:
+  DB_USER: helpforskillsqluser
+  DB_PASSWORD: Shriamits454@
+  MYSQL_DB: users_db
+  jwtSecret : helpforskill-scretKey
+  CLOUD_SQL_CONNECTION_NAME: helpforskill-adc23:asia-south1:helpforskillmqsql
+  mongoURI: mongodb+srv://shriamits454:9968470534n@helpforskillcluster-n2bq3.gcp.mongodb.net/testseries?retryWrites=true&w=majority

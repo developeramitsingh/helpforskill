@@ -1,0 +1,128 @@
+body, input, textarea, select, button {    
+    font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+.loginDiv{
+	margin:auto;	
+	width: 50%;
+	overflow: hidden !important;
+	height: 500px;
+	padding: 40px 40px;
+	text-align: center;
+	margin-top: 100px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 0px 50px #0000001A;
+	border-radius: 4px;
+}
+
+.loginGroup{
+	transition: 1s;
+}
+
+.default{
+	transition: 0.5s;
+}
+
+.loginAnim{
+		transition: 0.5s;
+		transform: translateX(-600px);						
+}
+
+
+.forgotAnim{		
+	display: block !important;
+	transition: 0.5s;	
+	transform:translate(550px, -430px);
+	animation: animForgot 0.5s forwards;	
+}
+
+@keyframes animForgot{
+	0%{
+		transform:translate(550px, -430px);
+	}
+	100%{
+		transform: translate(0px, -430px);
+	}
+}
+
+.FormInput{	
+	border: 1px solid #d1d1d1 !important;
+	border-radius: 8px !important;
+	text-align: center;
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+	font-size: 14px;
+}
+.FormInput::placeholder{
+	font-size: 14px;
+	color:#d1d1d1; 	
+}		
+.FormInput:focus{
+	 border: 1px solid #F2C508 !important;
+	 box-shadow: none !important; 
+}
+
+.FormBtn{
+	width: 100% !important;
+	background: #0B1052 !important;
+	padding: 10px !important; 
+	color:#fff;
+	border: none;
+	border-radius: 8px !important;
+}
+
+.success{
+	color:green;
+}
+.LabelLink{	
+	cursor: pointer;
+	color:#0B1052;
+}
+
+.line{
+	width: 40% !important;
+	display: inline-block !important;
+	vertical-align: middle;
+}
+
+.space{
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+.GoogleBtn{
+	width: 100% !important;
+	background: #F44336 0% 0% no-repeat padding-box !important;
+	border-radius: 5px !important;
+	padding: 0px 0px  0px 0px !important;
+	cursor: pointer !important;
+	color: #fff !important;
+	text-align: center !important;
+}
+
+.GoogleBtn span{
+	text-align: center !important;
+	width: 100% !important;
+
+}
+
+.GoogleBtn:hover, .FormBtn:hover{
+	background: #F2C508 !important;	
+
+}
+
+
+.loginDiv .smallHead{
+	color:#0B1052;
+}
+
+
+@media screen and (max-width: 800px){
+	.loginDiv{
+		width: 100% !important;		
+	}
+	#forgotP{
+		margin-top: 20px;
+	}
+}

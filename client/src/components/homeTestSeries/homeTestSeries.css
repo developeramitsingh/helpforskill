@@ -1,0 +1,55 @@
+.cardCustom{
+	text-align: center;
+    padding: 0px;
+    border-radius: 10px !important;
+    border: 1px solid #ABACAC;
+}
+
+.card-title{
+	background: #F2C508;
+	font-family: Segoe UI;
+	font-weight: bold !important;
+	margin-top: 20px;
+	font-size: 20px !important;
+}
+.card-content{
+	padding: 10px 0px !important;
+}
+.ExamInfo{
+	font-family: Segoe UI;
+	font-weight: bold !important;
+	font-size: 15px !important;
+	padding: 10px !important;
+}
+.BuyNowBtn{
+	font-family: Segoe UI;
+	font-weight: bold !important;
+	font-size: 15px !important;
+	background: #0B1052;
+	color: #fff;
+	display: block;
+	width: 80%;
+	margin:0 auto;
+	padding: 5px 10px;
+	border-radius: 50px;	
+	cursor: pointer;
+}
+.center{
+	text-align: center;
+}
+.right{
+	text-align: right;
+}
+.priceDiv{
+	padding: 10px 0px 0px 0px;
+}
+.priceTag{
+	background: red;
+	color:#fff;
+	float:right;
+	padding: 0px 10px 0px 20px;
+	font-family: Segoe UI;
+	font-weight: bold !important;
+	font-size: 15px !important;
+	border-radius: 30px 0px 0px 0px;
+}

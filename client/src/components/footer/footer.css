@@ -1,0 +1,60 @@
+.Footer{
+	background: #0B1052;
+	padding: 30px;
+	color:#ABACAC;
+}
+.footerArea1{
+	vertical-align: middle;
+	font-weight: bold;
+	width: 100%;
+	color:#fff;
+	padding-left: 10px;
+}
+.footerArea1 .Logo{
+	border: 1px solid #fff;
+	background: #fff;
+	width: 5rem;
+	height: 5rem;
+}
+.footerArea1 h3{
+	padding: 20px 10px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: Segoe UI;
+	font-weight: bold;
+	color:#fff;
+}
+
+.footerArea2 li{
+	padding: 15px;
+	cursor: pointer;
+	
+}
+
+.Links{
+	color:#ABACAC;
+	text-decoration: none !important;
+}
+
+.Links:hover{
+	color:#fff;
+}
+
+.footerArea2 li:hover{
+	background: rgba(244, 247, 254, 0.1);
+
+}
+.footer-copyright{
+	width: 100%;
+	padding: 10px;
+	background: rgba(244, 247, 254, 1);
+}
+
+@media screen and (max-width: 800px){
+	.Footer{
+		text-align: center;
+	}
+	.padding{
+		padding: 10px;
+	}
+}	

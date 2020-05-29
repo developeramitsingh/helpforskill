@@ -1,0 +1,102 @@
+
+.logoImg{
+	padding: 10px 0px;
+	width:100%;	
+}
+
+.links{
+	color:#ABACAC;
+	overflow: hidden;
+	width: 110px;
+	text-align: center;
+	font-weight: bold;
+
+}
+.links:hover{
+	text-decoration: none;
+	color:#F2C508;
+}
+
+.navCustom {
+	background: transparent;
+	box-shadow: none;
+	color:#ABACAC;
+	height: 82px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	width: 100%;
+	z-index: 2;
+}
+
+.UserName{
+	color:#0B1052;
+	font-weight: bold;
+	/*padding-right: 20px;*/
+}
+
+
+
+.MobileIcon{
+	display: none;
+}
+
+#signoutMenu{
+	display: block;
+}
+
+@media screen and (min-width: 801px){
+	#signoutMenu{
+		display: block !important;
+	}
+	.brand-logo{
+		left: 0% !important;
+		transform: translateX(0px) !important;
+	}		
+}
+
+@media screen and (max-width: 800px){
+	.brand-logo{
+		left: 0% !important;
+		transform: translateX(0px) !important;
+	}
+
+
+	#signoutMenu{
+		position: absolute;
+		top:90px;
+		left:0px;
+		background: #0B1052;
+		width: 100%;
+		text-align: center;
+		font-weight: bold;
+		display: none;
+		color:#fff;
+	}
+	#signoutMenu li{
+		width: 100%;
+	}
+	
+	.links:hover{
+		color:#fff !important;
+	}
+	.MobileIcon{
+		display: block;
+		color:#fff;
+		cursor: pointer;
+		position: absolute;
+		right:10px;
+		top:10px;
+	}
+
+	.MobileIcon i{
+		font-size: 45px;
+		color:#0B1052;
+	}
+
+	.links{
+		width: 100%;
+	}
+	
+}
+
