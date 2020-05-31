@@ -1,0 +1,104 @@
+.testWindow{
+	
+}
+.testWindow{	
+	background: #fff;
+	
+	padding: 10px;	
+	margin-top: 120px;
+}
+
+
+.timerSection{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	font-weight: bold;
+}
+.testLogo{
+	float: left;
+
+}
+
+.sectionHeading{
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+.ExamName{
+	padding: 0px 40px;
+}
+.timeLeft{
+	border: 1px solid #ABACAC;
+	padding: 10px 10px; 
+	background: #F4F7FE;
+	text-align: center;
+}
+
+.timeSpan{
+	border:1px solid #F4F7FE;
+	
+	font-size: 19px;
+}
+
+.button{	
+	padding: 10px 40px; 
+	background: #F4F7FE;	
+	border:1px solid #ABACAC;
+	cursor: pointer;
+}
+
+.button:hover{
+	background: #F2C508;
+	color:#fff;
+}
+
+.sectionContainer{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	background:#F4F7FE; 
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#langaugeSelect{
+	display: block;
+	width: auto;
+}
+.sections{
+	width: 75%;
+}
+
+.switchLanguage{
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sectionName{
+	width: auto;
+	display: inline-block;
+	padding: 10px;
+	border-radius: 5px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.sectionName:hover{
+	background: #F2C508;
+}
+
+.activeSection{
+	background: #0B1052;
+	color: #fff;
+}
+
+.bshadow{
+	box-shadow: 0px 0px 5px 5px #e6e6e6;
+}
+
+.pd-10{
+	padding: 10px;
+}
