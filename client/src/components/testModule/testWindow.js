@@ -30,7 +30,7 @@ const TestWindow = ()=>{
 									<div className="sectionName">Section B: Technical</div>		
 								</div>
 								<div className="switchLanguage">
-									<label>View in</label>
+									<span><b>View in</b></span>
 									<select name="language" defaultValue="English" id="langaugeSelect">
 										<option defaultValue="Hindi">Hindi</option>
 										<option defaultValue="English">English</option>						

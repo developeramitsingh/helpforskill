@@ -74,7 +74,7 @@
 .switchLanguage{
 	width: 25%;
 	display: flex;
-	justify-content: center;
+	justify-content:space-evenly;
 	align-items: center;
 }
 .sectionName{
@@ -96,7 +96,7 @@
 }
 
 .bshadow{
-	box-shadow: 0px 0px 5px 5px #e6e6e6;
+	box-shadow: 0px 5px 10px 0px #e6e6e6;
 }
 
 .pd-10{
