@@ -102,3 +102,53 @@
 .pd-10{
 	padding: 10px;
 }
+
+.activeUser>span{
+	font-size: 45px;
+	background: #F2C508;
+	vertical-align: middle;
+	padding: 0px;
+}
+.currentReviewSection{
+	font-weight: bold;
+	font-size: 16px;
+	background: #F4F7FE;
+	width: 100%;
+	padding: 10px;
+}
+
+.legendsReview{
+	font-size: 11px;
+	
+
+}
+.legendsReview div > span{
+	
+	background: #F4F7FE;
+	border:1px solid #ABACAC;
+	padding: 10px 14px;
+	vertical-align: middle;
+	display: inline-block; 
+	margin-right: 10px;
+	
+}
+
+#answered{
+	background: green;
+}
+
+#notanswered{
+	background: red;
+}
+
+#markedAnswered{
+	background: purple;
+}
+
+#marked{
+	background: magenta;
+}
+
+#notVisited{
+	background: white;
+}

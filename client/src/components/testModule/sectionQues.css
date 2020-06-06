@@ -1,0 +1,99 @@
+input[type="radio"]{
+	opacity: 0 !important;	
+	pointer-events: auto !important;
+	width: 100% !important;
+	z-index: 1;
+	height: 21px;	
+}
+
+input[type="radio"]:checked + span:after{
+	background: #cecece !important;
+	border:2px solid #0B1052;
+	
+}
+
+
+
+.quesNumCont{
+	border-bottom: 1px solid #ABACAC;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0px;
+}
+
+.quesNum{
+	position: relative;
+	width: 70%;
+	font-size: 18px;
+	font-weight: bold;
+}
+.marksCont{
+	position: relative;
+	width: 30%;
+	font-size: 14px;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.marksCont .positive{
+	background: green;
+}
+
+.marksCont .negative{
+	background: red;
+}
+
+.marksCont  span{
+	border-radius: 20px;
+	padding: 1px 15px;
+	display: inline-block;	
+	color: #fff;
+}
+
+.ques, .option{
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.markRevBtn, .saveBtn, .clearResBtn{
+		width: 100%;
+		font-weight: bold;
+		background: #F4F7FE;
+	}
+
+
+
+.btn:hover{
+	background: #F2C508 !important;
+}	
+
+@media screen and (max-width: 610px) and (min-width: 475px){
+	.quesNum{
+		width: 60%;
+	}
+	.marksCont{
+		width: 40%;
+	}
+	
+}
+
+@media screen and (max-width: 474px) and (min-width: 386px){
+	.quesNum{
+		width: 50%;
+	}
+	.marksCont{
+		width: 50%;
+	}
+	
+}
+@media screen and (max-width: 385px){
+	.quesNum, .marksCont{
+		width: 100%;
+	}
+	
+}
