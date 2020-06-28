@@ -14,4 +14,7 @@ export const CLEAR_ERRORS="clearErrors";
 export const GET_LOGGED_IN_USER = "loggedInUser";
 
 
+export const LOAD_EXAM="loadExam";
+export const EXAM_LOADING="loadingExam";
+
 

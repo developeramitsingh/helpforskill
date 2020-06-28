@@ -129,8 +129,13 @@
 	padding: 10px 14px;
 	vertical-align: middle;
 	display: inline-block; 
-	margin-right: 10px;
-	
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.legendsReview div {
+	padding: 5px;
+
 }
 
 #answered{
@@ -151,4 +156,12 @@
 
 #notVisited{
 	background: white;
+}
+
+
+.PauseTest{	
+	content: "Resume Test...";
+	filter: blur(5px);
+	opacity: 0.5;	
+	pointer-events: none;
 }

@@ -1,28 +1,73 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import '../../materialize.min.css';
 import logo from '../../logo.png';
 import './testWindow.css'
 import SectionQues from './sectionQues';
-const TestWindow = ()=>{
-	return (
+import {useDispatch, useSelector} from 'react-redux'
+import {timer, pauseExam, clearTimer} from './timer'
+
+import {loadExam, loadingExam} from '../../actions/examActions'
+
+const TestWindow = (props)=>{
+	const [timeremain, updatetime]  = useState(null)
+	const testLoadState = useSelector(state => state.TestLoadReducer)
+	const dispatch = useDispatch();
+	let isLoaded = testLoadState.isLoaded
+
+
+
+	useEffect(()=>{	
+		dispatch(loadingExam())		
+		dispatch(loadExam("NICTechnicalAExam_2020", 1))
+	},[])
+
+	useEffect(()=>{		
+		if (isLoaded){
+				console.log("Exam Started")
+				timer(testLoadState)
+		}
+		return ()=>{			
+			clearTimer()
+		};
+
+	}, [isLoaded])
+
+
+	const returnSections = ()=>{
+		let sections = testLoadState.testData.Sections.map((section)=>{
+			
+		});
+
+		return(
+				<div>
+
+
+					<div className="sectionName activeSection">Section A: General</div>
+					<div className="sectionName">Section B: Technical</div>
+				</div>
+			)
+	}
+
+	return (			
 			<div className="testWindow">
+								
 				<div className="container-fluid">
 					<div className="row bshadow pd-10">								
 						<div className="col-sm-12 col-md-8">
 							<div className="sectionHeading">
 								<img className="testLogo" src={logo} alt="logo"/>
-								<h3 className="ExamName">NIC Technical Assitants</h3>
+								<h3 className="ExamName">{testLoadState.testData.test_name}</h3>
 							</div>	
 						</div>
 						<div className="col-sm-12 col-md-4">
 							<div className="timerSection">
-								<div className="timeLeft">Time Left: <span className="timeSpan">02:55:10</span></div>
-								<div className="pauseTime button">Pause</div>
+								<div className="timeLeft">Time Left: <span className="timeSpan"></span></div>
+								<div className="pauseTime button" onClick={pauseExam}>Pause</div>
 							</div>
 						</div>
 					</div>
 
-					<div className="row">
+					<div className="row sectionBelow">
 						<div className="col-sm-12 col-md-9">
 							<div className="sectionContainer">						
 								<div className="sections">
@@ -75,5 +120,6 @@ const TestWindow = ()=>{
 
 		)
 }
+
 
 export default TestWindow;
